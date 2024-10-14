@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 08:51:17 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/09 10:46:17 by blohrer          ###   ########.fr       */
+/*   Created: 2024/10/14 09:16:35 by blohrer           #+#    #+#             */
+/*   Updated: 2024/10/14 09:18:37 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int n)
+int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 {
-	if (n >= 0 && n <= 127)
-		return (1);
-	else
-		return (0);
+	const unsigned char	*p1 = (const unsigned char *)ptr1;
+	const unsigned char	*p2 = (const unsigned char *)ptr2;
+	size_t				i;
+
+	i = 0;
+	while (i < num)
+	{
+		if (p1[i] != p2[i])
+		{
+			return (p1[i] - p2[i]);
+		}
+		i++;
+	}
+	return (0);
 }

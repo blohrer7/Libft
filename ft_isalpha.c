@@ -6,14 +6,14 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 08:27:41 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/09 09:49:33 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/09 12:07:24 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
-        return (1);
-    else 
-        return (0);
+	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }

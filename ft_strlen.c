@@ -6,17 +6,17 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 09:00:11 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/09 09:12:28 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/09 12:07:31 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-    int length;
+	int length;
 
-    while(str[length] != '\0')
-    {
-        length++;
-    }
-    return length;
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
 }

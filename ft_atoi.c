@@ -1,19 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 08:51:17 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/09 10:46:17 by blohrer          ###   ########.fr       */
+/*   Created: 2024/10/14 09:27:41 by blohrer           #+#    #+#             */
+/*   Updated: 2024/10/14 09:27:59 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int n)
+int	ft_atoi(const char *str)
 {
-	if (n >= 0 && n <= 127)
-		return (1);
-	else
-		return (0);
+	int	result;
+	int	sign;
+
+	result = 0;
+	sign = 1;
+	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v'
+		|| *str == '\f' || *str == '\r')
+	{
+		str++;
+	}
+	if (*str == '-' || *str == '+')
+	{
+		if (*str == '-')
+		{
+			sign = -1;
+		}
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+	{
+		result = result * 10 + (*str - '0');
+		str++;
+	}
+	return (sign * result);
 }
