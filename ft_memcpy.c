@@ -1,18 +1,28 @@
-void *ft_memcpy(void *dest, const void *src, int n)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/15 09:04:10 by blohrer           #+#    #+#             */
+/*   Updated: 2024/10/15 09:33:54 by blohrer          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	*ft_memcpy(void *dest, const void *src, int n)
 {
-    unsigned char *d;
-    const unsigned char *s;
-    
-    d = (unsigned char *)dest;
-    s = (const unsigned char *)src;
-    
-    int i = 0;
+	unsigned char		*d;
+	const unsigned char	*s;
+	int					i;
 
-    while (i < n)
-    {
-        d[i] = s[i];
-        i++;
-    }
-
-    return dest;
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
 }

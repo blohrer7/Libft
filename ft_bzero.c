@@ -6,11 +6,19 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 12:10:54 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/09 12:13:53 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/15 10:03:02 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, int n)
+void	ft_bzero(void *s, size_t n)
 {
+	unsigned char	*ptr;
 
+	ptr = s;
+	while (n > 0)
+	{
+		*ptr = 0;
+		ptr++;
+		n--;
+	}
 }
