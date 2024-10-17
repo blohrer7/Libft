@@ -6,15 +6,14 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 10:05:11 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/15 10:05:31 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/16 17:10:45 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s)
+	if (s == NULL)
 		return ;
 	while (*s)
 	{

@@ -6,20 +6,19 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:52:17 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/14 13:58:23 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/16 17:04:15 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
 	i = 0;
-	if (s && f)
+	if (s != NULL && f != NULL)
 	{
-		while (s[i])
+		while (s[i] != '\0')
 		{
 			f(i, &s[i]);
 			i++;

@@ -6,17 +6,15 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 10:12:00 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/15 10:13:40 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/16 17:12:55 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (!s)
+	if (s == NULL)
 		return ;
-	write(fd, s, strlen(s));
+	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }

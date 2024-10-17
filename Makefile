@@ -6,9 +6,14 @@
 #    By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 10:59:09 by blohrer           #+#    #+#              #
-#    Updated: 2024/10/15 12:01:28 by blohrer          ###   ########.fr        #
+#    Updated: 2024/10/17 07:07:00 by blohrer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+NAME 	= libft.a
+CC 		= gcc
+CFLAGS 	= -Wall -Wextra -Werror
+
 
 SRC		=	ft_isdigit.c \
 			ft_isprint.c \
@@ -45,9 +50,6 @@ SRC		=	ft_isdigit.c \
 			ft_toupper.c
 
 
-NAME 	= libft.a
-CC 		= gcc
-CFLAGS 	= -Wall -Wextra -Werror
 OBJ 	= $(SRC:.c=.o)
 
 all: $(NAME)

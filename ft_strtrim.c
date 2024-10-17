@@ -6,12 +6,10 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:50:04 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/14 13:12:01 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/16 16:52:01 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
 
 static int	is_in_set(char c, const char *set)
 {
@@ -31,9 +29,9 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	len;
 	char	*trimmed_str;
 
-	if (!s1 || !set)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
-	end = strlen(s1);
+	end = ft_strlen(s1);
 	start = 0;
 	while (is_in_set(s1[start], set))
 		start++;
@@ -41,9 +39,9 @@ char	*ft_strtrim(const char *s1, const char *set)
 		end--;
 	len = end - start;
 	trimmed_str = (char *)malloc(len + 1);
-	if (!trimmed_str)
+	if (trimmed_str == NULL)
 		return (NULL);
-	strncpy(trimmed_str, s1 + start, len);
+	ft_strncpy(trimmed_str, s1 + start, len);
 	trimmed_str[len] = '\0';
 	return (trimmed_str);
 }
