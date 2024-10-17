@@ -6,10 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:50:04 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/16 16:52:01 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:52:58 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 static int	is_in_set(char c, const char *set)
 {

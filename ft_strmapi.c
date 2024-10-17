@@ -6,10 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:44:39 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/16 16:55:13 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:52:31 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

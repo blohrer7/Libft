@@ -6,9 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:04:58 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/15 09:34:23 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:52:20 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int size)
 {

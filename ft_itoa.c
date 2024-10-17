@@ -6,10 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:16:09 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/16 16:53:30 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:50:16 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 static int	get_length(int n)
 {

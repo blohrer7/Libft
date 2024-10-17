@@ -6,11 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 09:36:52 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/14 09:37:17 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:51:53 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

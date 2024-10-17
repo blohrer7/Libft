@@ -6,9 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:05:15 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/15 09:34:33 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:52:53 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {

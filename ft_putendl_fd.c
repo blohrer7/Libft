@@ -6,10 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 10:12:00 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/16 17:12:55 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:51:18 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

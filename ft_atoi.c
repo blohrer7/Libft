@@ -6,9 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 09:27:41 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/14 09:27:59 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:48:59 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

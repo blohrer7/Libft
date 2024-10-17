@@ -6,10 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:23:39 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/16 16:44:18 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:52:08 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

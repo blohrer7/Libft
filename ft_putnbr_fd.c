@@ -6,10 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 10:16:02 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/16 17:14:20 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:51:26 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -6,9 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 12:10:54 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/15 10:03:02 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:49:22 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

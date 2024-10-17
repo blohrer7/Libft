@@ -6,7 +6,7 @@
 #    By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 10:59:09 by blohrer           #+#    #+#              #
-#    Updated: 2024/10/17 07:07:00 by blohrer          ###   ########.fr        #
+#    Updated: 2024/10/17 09:39:52 by blohrer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,8 @@ SRC		=	ft_isdigit.c \
 			ft_strtrim.c \
 			ft_substr.c \
 			ft_tolower.c \
-			ft_toupper.c
+			ft_toupper.c \
+			ft_split.c
 
 
 OBJ 	= $(SRC:.c=.o)

@@ -6,9 +6,11 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 09:33:11 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/14 09:33:40 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/17 09:49:30 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_calloc(size_t num, size_t size)
 {
