@@ -6,43 +6,31 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:50:04 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/17 09:52:58 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/18 13:58:16 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_in_set(char c, const char *set)
-{
-	while (*set)
-	{
-		if (c == *set)
-			return (1);
-		set++;
-	}
-	return (0);
-}
-
-char	*ft_strtrim(const char *s1, const char *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
 	size_t	len;
-	char	*trimmed_str;
+	char	*trimmed;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);
-	end = ft_strlen(s1);
 	start = 0;
-	while (is_in_set(s1[start], set))
+	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
-	while (end > start && is_in_set(s1[end - 1], set))
+	end = ft_strlen(s1);
+	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
 	len = end - start;
-	trimmed_str = (char *)malloc(len + 1);
-	if (trimmed_str == NULL)
+	trimmed = (char *)malloc(len + 1);
+	if (trimmed == NULL)
 		return (NULL);
-	ft_strncpy(trimmed_str, s1 + start, len);
-	trimmed_str[len] = '\0';
-	return (trimmed_str);
+	ft_strlcpy(trimmed, s1 + start, len + 1);
+	return (trimmed);
 }

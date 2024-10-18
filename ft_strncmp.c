@@ -6,7 +6,7 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:05:07 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/17 09:52:38 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/18 11:47:18 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (0);
 }
+// int main(void)
+// {
+// 	char *s = "s";
+// 	char *t = "t";
+// 	ft_strncmp(s, t, 1);
+// 	return 0;
+// }
+

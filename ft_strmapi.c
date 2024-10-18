@@ -6,7 +6,7 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:44:39 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/17 09:52:31 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/18 13:02:20 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	while (i < len)
 	{
-		result[i] = f(i, s[i++]);
+		result[i] = f(i, s[i]);
+		i++;
 	}
 	result[len] = '\0';
 	return (result);

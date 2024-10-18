@@ -6,7 +6,7 @@
 #    By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 10:59:09 by blohrer           #+#    #+#              #
-#    Updated: 2024/10/18 11:06:09 by blohrer          ###   ########.fr        #
+#    Updated: 2024/10/18 11:51:51 by blohrer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,6 @@ CFLAGS 	= -Wall -Wextra -Werror
 
 
 SRC		=	ft_isdigit.c \
-			ft_isprint.c \
 			ft_atoi.c \
 			ft_bzero.c \
 			ft_calloc.c \
@@ -40,7 +39,6 @@ SRC		=	ft_isdigit.c \
 			ft_strlcat.c \
 			ft_strlcpy.c \
 			ft_strlen.c \
-			ft_strcmp.c \
 			ft_strnstr.c \
 			ft_strrchr.c \
 			ft_strtrim.c \
@@ -48,7 +46,9 @@ SRC		=	ft_isdigit.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_split.c \
-
+			ft_strncmp.c \
+			ft_strmapi.c \
+			ft_isprint.c \
 
 BONUS	=	ft_lstadd_back_bonus.c \
 			ft_lstadd_front_bonus.c \
