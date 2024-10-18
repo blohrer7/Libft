@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 09:00:11 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/17 18:30:32 by blohrer          ###   ########.fr       */
+/*   Created: 2024/10/17 16:56:25 by blohrer           #+#    #+#             */
+/*   Updated: 2024/10/17 17:06:29 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str) 
+void ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	length;
+    t_list *last;
 
-	length = 0;
-	while (str[length] != '\0')
-	{
-		length++;
-	}
-	return (length);
+    if (lst == NULL || new == NULL)
+        return;
+
+    if (*lst == NULL) 
+    {
+        *lst = new;
+        return;
+    }
+
+    last = ft_lstlast(*lst); 
+    last->next = new;
 }

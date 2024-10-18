@@ -6,7 +6,7 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 06:30:44 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/17 11:20:07 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/18 08:18:27 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,3 +110,34 @@ char	**ft_split(const char *s, char c)
 	result[i] = NULL;
 	return (result);
 }
+// void	free_split(char **result, int words)
+// {
+// 	int	i;
+
+// 	i = 0;
+// 	while (i < words)
+// 	{
+// 		free(result[i]);
+// 		i++;
+// 	}
+// 	free(result);
+// }
+
+// static int  count_words(char const *s, char c)
+// {
+//     int count;
+
+//     count = 0;
+//     while (*s != '\0')
+//     {
+//         if (*s != c)
+//         {
+//             count++;
+//             while (*s && *s != c)
+//                 s++;
+//         }
+//         else
+//             s++;
+//     }
+//     return (count);
+// }
