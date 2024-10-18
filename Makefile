@@ -6,7 +6,7 @@
 #    By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 10:59:09 by blohrer           #+#    #+#              #
-#    Updated: 2024/10/17 09:39:52 by blohrer          ###   ########.fr        #
+#    Updated: 2024/10/18 11:06:09 by blohrer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,6 @@ SRC		=	ft_isdigit.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
-			ft_isdigit.c \
 			ft_itoa.c \
 			ft_memchr.c \
 			ft_memcmp.c \
@@ -48,22 +47,35 @@ SRC		=	ft_isdigit.c \
 			ft_substr.c \
 			ft_tolower.c \
 			ft_toupper.c \
-			ft_split.c
+			ft_split.c \
 
+
+BONUS	=	ft_lstadd_back_bonus.c \
+			ft_lstadd_front_bonus.c \
+			ft_lstclear_bonus.c \
+			ft_lstdelone_bonus.c \
+			ft_lstiter_bonus.c \
+			ft_lstlast_bonus.c \
+			ft_lstmap_bonus.c \
+			ft_lstnew_bonus.c \
+			ft_lstsize_bonus.c \
 
 OBJ 	= $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar rcs $@ $^
+bonus: $(BONUS:.c=.o)
+	ar -r $(NAME) $?
 
-%.o: %.c libft.h
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
+
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUS:.c=.o)
 
 
 fclean: clean
@@ -72,4 +84,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
