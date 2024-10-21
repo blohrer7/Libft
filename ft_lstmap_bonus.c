@@ -6,7 +6,7 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:51:30 by blohrer           #+#    #+#             */
-/*   Updated: 2024/10/18 09:03:59 by blohrer          ###   ########.fr       */
+/*   Updated: 2024/10/21 11:11:12 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,24 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list;
 	t_list	*new_node;
 
-	new_list = NULL;
-	if (lst == NULL || f == NULL)
+	if (lst == NULL || f == NULL || del == NULL)
 		return (NULL);
-	while (lst != NULL)
+	new_list = ft_lstnew(f(lst->content));
+	if (!new_list)
+		return (NULL);
+	new_node = new_list;
+	lst = lst->next;
+	while (lst)
 	{
-		new_node = ft_lstnew(f(lst->content));
-		if (new_node == NULL)
+		new_list->next = ft_lstnew(f(lst->content));
+		if (!(new_list->next))
 		{
-			if (del != NULL)
-			{
-				ft_lstclear(&new_list, del);
-			}
+			del(new_node->content);
+			ft_lstclear(&new_node, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&new_list, new_node);
+		new_list = new_list->next;
 		lst = lst->next;
 	}
-	return (new_list);
+	return (new_node);
 }
